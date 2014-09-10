@@ -1226,6 +1226,7 @@ namespace MarkerMetro.Unity.Ionic.Zlib
         [System.Diagnostics.ConditionalAttribute("Trace")]
         private void TraceOutput(TraceBits bits, string format, params object[] varParams)
         {
+#if !NETFX_CORE
             if ((bits & _DesiredTrace) != 0)
             {
                 lock(_outputLock)
@@ -1241,6 +1242,7 @@ namespace MarkerMetro.Unity.Ionic.Zlib
 #endif
                 }
             }
+#endif
         }
 
 
