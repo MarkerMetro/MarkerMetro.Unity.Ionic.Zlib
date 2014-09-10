@@ -13,9 +13,9 @@
     <dependencies/>
   </metadata>
   <files>
-    <file src="MarkerMetro.Unity.WinLegacyUnity\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\net35\"/>
-    <file src="MarkerMetro.Unity.WinLegacyUnity\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\"/>
-    <file src="MarkerMetro.Unity.WinLegacyWP8\Bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\windowsphone8\"/>    
-    <file src="MarkerMetro.Unity.WinLegacyMetro\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\netcore45\"/>
+    <file src="MarkerMetro.Unity.Ionic.ZlibUnity\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\net35\"/>
+    <file src="MarkerMetro.Unity.Ionic.ZlibUnity\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\"/>
+    <file src="MarkerMetro.Unity.Ionic.ZlibWP8\Bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\windowsphone8\"/>    
+    <file src="MarkerMetro.Unity.Ionic.ZlibMetro\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\netcore45\"/>
   </files>
 </package>
