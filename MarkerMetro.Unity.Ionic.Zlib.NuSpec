@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MarkerMetro.Unity.Ionic.Zlib</id>
+    <version>$version$</version>
+    <title>MarkerMetro's Unity port of Ionic Zlib</title>
+    <description>Ionic Zlib Unity plugin for Windows Store and Windows Phone</description>
+    <authors>MarkerMetro</authors>
+    <owners>MarkerMetro</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright MarkerMetro © 2014</copyright>
+    <projectUrl>https://github.com/MarkerMetro/MarkerMetro.Unity.Ionic.Zlib</projectUrl>
+    <dependencies/>
+  </metadata>
+  <files>
+    <file src="MarkerMetro.Unity.WinLegacyUnity\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\net35\"/>
+    <file src="MarkerMetro.Unity.WinLegacyUnity\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\"/>
+    <file src="MarkerMetro.Unity.WinLegacyWP8\Bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\windowsphone8\"/>    
+    <file src="MarkerMetro.Unity.WinLegacyMetro\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\netcore45\"/>
+  </files>
+</package>
