@@ -8,14 +8,14 @@
     <authors>MarkerMetro</authors>
     <owners>MarkerMetro</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright>Copyright MarkerMetro © 2014</copyright>
+    <copyright>Copyright MarkerMetro Â© 2014</copyright>
     <projectUrl>https://github.com/MarkerMetro/MarkerMetro.Unity.Ionic.Zlib</projectUrl>
     <dependencies/>
   </metadata>
   <files>
-    <file src="MarkerMetro.Unity.Ionic.ZlibUnity\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\net35\"/>
-    <file src="MarkerMetro.Unity.Ionic.ZlibUnity\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\"/>
-    <file src="MarkerMetro.Unity.Ionic.ZlibWP8\Bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\windowsphone8\"/>    
-    <file src="MarkerMetro.Unity.Ionic.ZlibMetro\bin\Release\MarkerMetro.Unity.Ionic.Zlib.dll" target="lib\netcore45\"/>
+    <file src="MarkerMetro.Unity.Ionic.ZlibUnity\bin\Release\Ionic.Zlib.dll" target="lib\net35\"/>
+    <file src="MarkerMetro.Unity.Ionic.ZlibUnity\bin\Release\Ionic.Zlib.dll" target="lib\"/>
+    <file src="MarkerMetro.Unity.Ionic.ZlibWP8\Bin\Release\Ionic.Zlib.dll" target="lib\windowsphone8\"/>    
+    <file src="MarkerMetro.Unity.Ionic.ZlibMetro\bin\Release\Ionic.Zlib.dll" target="lib\netcore45\"/>
   </files>
 </package>
