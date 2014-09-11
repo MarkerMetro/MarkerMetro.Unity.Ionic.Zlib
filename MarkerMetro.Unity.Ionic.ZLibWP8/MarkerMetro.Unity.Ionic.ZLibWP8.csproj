@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MarkerMetro.Unity.Ionic</RootNamespace>
-    <AssemblyName>MarkerMetro.Unity.Ionic.ZLib</AssemblyName>
+    <AssemblyName>Ionic.ZLib</AssemblyName>
     <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>

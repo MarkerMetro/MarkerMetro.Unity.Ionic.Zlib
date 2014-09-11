@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MarkerMetro.Unity.Ionic</RootNamespace>
-    <AssemblyName>MarkerMetro.Unity.Ionic.ZLib</AssemblyName>
+    <AssemblyName>Ionic.ZLib</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

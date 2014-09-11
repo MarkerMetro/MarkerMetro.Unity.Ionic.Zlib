@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MarkerMetro.Unity.Ionic</RootNamespace>
-    <AssemblyName>MarkerMetro.Unity.Ionic.ZLib</AssemblyName>
+    <AssemblyName>Ionic.ZLib</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
