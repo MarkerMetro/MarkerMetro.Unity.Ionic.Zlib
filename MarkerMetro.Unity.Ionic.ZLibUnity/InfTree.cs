@@ -62,7 +62,7 @@
 
 
 using System;
-namespace MarkerMetro.Unity.Ionic.Zlib
+namespace Ionic.Zlib
 {
         
         sealed class InfTree

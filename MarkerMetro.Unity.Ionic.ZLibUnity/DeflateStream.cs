@@ -27,7 +27,7 @@
 
 using System;
 
-namespace MarkerMetro.Unity.Ionic.Zlib
+namespace Ionic.Zlib
 {
     /// <summary>
     /// A class for compressing and decompressing streams using the Deflate algorithm.

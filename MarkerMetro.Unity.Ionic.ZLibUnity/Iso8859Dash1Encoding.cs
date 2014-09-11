@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MarkerMetro.Unity.Ionic.Encoding
+namespace Ionic.Encoding
 {
     /// <summary>
     /// Provides a text encoder for the iso-8859-1 encoding, aka Latin1 encoding,

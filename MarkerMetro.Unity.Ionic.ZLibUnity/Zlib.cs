@@ -91,7 +91,7 @@
 using System;
 using Interop=System.Runtime.InteropServices;
 
-namespace MarkerMetro.Unity.Ionic.Zlib
+namespace Ionic.Zlib
 {
 
     /// <summary>

@@ -63,7 +63,7 @@
 
 using System;
 
-namespace MarkerMetro.Unity.Ionic.Zlib
+namespace Ionic.Zlib
 {
     /// <summary>
     /// A bunch of constants used in the Zlib interface.
