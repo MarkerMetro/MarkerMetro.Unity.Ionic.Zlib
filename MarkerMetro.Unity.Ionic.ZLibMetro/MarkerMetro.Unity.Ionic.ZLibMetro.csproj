@@ -104,6 +104,48 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\CRC32.cs">
+      <Link>CRC32.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\Deflate.cs">
+      <Link>Deflate.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\DeflateStream.cs">
+      <Link>DeflateStream.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\GZipStream.cs">
+      <Link>GZipStream.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\Inflate.cs">
+      <Link>Inflate.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\InfTree.cs">
+      <Link>InfTree.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\Iso8859Dash1Encoding.cs">
+      <Link>Iso8859Dash1Encoding.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\ParallelDeflateOutputStream.cs">
+      <Link>ParallelDeflateOutputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\Tree.cs">
+      <Link>Tree.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\Zlib.cs">
+      <Link>Zlib.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\ZlibBaseStream.cs">
+      <Link>ZlibBaseStream.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\ZlibCodec.cs">
+      <Link>ZlibCodec.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\ZlibConstants.cs">
+      <Link>ZlibConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\MarkerMetro.Unity.Ionic.ZLibUnity\ZlibStream.cs">
+      <Link>ZlibStream.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">

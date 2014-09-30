@@ -49,14 +49,26 @@ namespace Ionic.Zlib
         protected internal System.IO.Stream _stream;
         protected internal CompressionStrategy Strategy = CompressionStrategy.Default;
 
+#if !NETFX_CORE
         // workitem 7159
         Ionic.Crc.CRC32 crc;
+#endif
         protected internal string _GzipFileName;
         protected internal string _GzipComment;
         protected internal DateTime _GzipMtime;
         protected internal int _gzipHeaderByteCount;
 
-        internal int Crc32 { get { if (crc == null) return 0; return crc.Crc32Result; } }
+        internal int Crc32 
+        { 
+            get 
+            { 
+#if !NETFX_CORE
+                if (crc == null) return 0; return crc.Crc32Result; 
+#else
+                return 0;
+#endif
+            } 
+        }
 
         public ZlibBaseStream(System.IO.Stream stream,
                               CompressionMode compressionMode,
@@ -75,7 +87,11 @@ namespace Ionic.Zlib
             // workitem 7159
             if (flavor == ZlibStreamFlavor.GZIP)
             {
+#if !NETFX_CORE
                 this.crc = new Ionic.Crc.CRC32();
+#else
+                throw new NotSupportedException("ZlibStreamFlavor.GZIP is unsupported");
+#endif
             }
         }
 
@@ -126,10 +142,12 @@ namespace Ionic.Zlib
 
         public override void Write(System.Byte[] buffer, int offset, int count)
         {
+#if !NETFX_CORE
             // workitem 7159
             // calculate the CRC on the unccompressed data  (before writing)
             if (crc != null)
                 crc.SlurpBlock(buffer, offset, count);
+#endif
 
             if (_streamMode == StreamMode.Undefined)
                 _streamMode = StreamMode.Writer;
@@ -210,6 +228,7 @@ namespace Ionic.Zlib
 
                 Flush();
 
+#if !NETFX_CORE
                 // workitem 7159
                 if (_flavor == ZlibStreamFlavor.GZIP)
                 {
@@ -226,10 +245,12 @@ namespace Ionic.Zlib
                         throw new ZlibException("Writing with decompression is not supported.");
                     }
                 }
+#endif
             }
             // workitem 7159
             else if (_streamMode == StreamMode.Reader)
             {
+#if !NETFX_CORE
                 if (_flavor == ZlibStreamFlavor.GZIP)
                 {
                     if (!_wantCompress)
@@ -279,6 +300,7 @@ namespace Ionic.Zlib
                         throw new ZlibException("Reading with compression is not supported.");
                     }
                 }
+#endif
             }
         }
 
@@ -298,8 +320,11 @@ namespace Ionic.Zlib
             _z = null;
         }
 
-
+#if NETFX_CORE
+        public void Close()
+#else
         public override void Close()
+#endif
         {
             if (_stream == null) return;
             try
@@ -309,7 +334,16 @@ namespace Ionic.Zlib
             finally
             {
                 end();
-                if (!_leaveOpen) _stream.Close();
+
+                if (!_leaveOpen)
+                {
+#if !NETFX_CORE
+                    _stream.Close();
+#else
+                    _stream.Dispose();
+#endif
+                }
+
                 _stream = null;
             }
         }
@@ -519,9 +553,11 @@ namespace Ionic.Zlib
 
             rc = (count - _z.AvailableBytesOut);
 
+#if !NETFX_CORE
             // calculate CRC after reading
             if (crc != null)
                 crc.SlurpBlock(buffer, offset, rc);
+#endif
 
             return rc;
         }

@@ -1,3 +1,5 @@
+#if !NETFX_CORE
+
 //#define Trace
 
 // ParallelDeflateOutputStream.cs
@@ -1385,4 +1387,4 @@ namespace Ionic.Zlib
 
 }
 
-
+#endif
