@@ -3,12 +3,12 @@
   <metadata>
     <id>MarkerMetro.Unity.Ionic.Zlib</id>
     <version>$version$</version>
-    <title>MarkerMetro's Unity port of Ionic Zlib</title>
-    <description>Ionic Zlib Unity plugin for Windows Store and Windows Phone</description>
+    <title>MarkerMetro.Unity.Ionic.Zlib</title>
+    <description>Ionic.Zlib Windows Store and Windows Phone Unity Plugin</description>
     <authors>MarkerMetro</authors>
     <owners>MarkerMetro</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright>Copyright MarkerMetro © 2014</copyright>
+    <copyright>Copyright Marker Metro © 2015</copyright>
     <projectUrl>https://github.com/MarkerMetro/MarkerMetro.Unity.Ionic.Zlib</projectUrl>
     <dependencies/>
   </metadata>
