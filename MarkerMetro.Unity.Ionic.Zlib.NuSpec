@@ -10,6 +10,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>Copyright Marker Metro © 2015</copyright>
     <projectUrl>https://github.com/MarkerMetro/MarkerMetro.Unity.Ionic.Zlib</projectUrl>
+    <iconUrl>http://www.markermetro.com/wp-content/uploads/2015/01/mm-boxlogo-128px.png</iconUrl>
+    <licenseUrl>https://github.com/MarkerMetro/MarkerMetro.Unity.Ionic.Zlib/raw/master/LICENSE</licenseUrl>
     <dependencies/>
   </metadata>
   <files>
